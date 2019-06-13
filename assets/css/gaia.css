@@ -222,7 +222,7 @@ a:hover {
 }
 
 .separator {
-  color: #c5a47e;
+  color: #12799747;
   margin: 0 auto 20px;
   max-width: 240px;
   text-align: center;
@@ -233,7 +233,7 @@ a:hover {
   width: 40%;
   content: " ";
   margin-top: 10px;
-  border: 1px solid #c5a47e;
+  border: 1px solid #127997;
 }
 .separator:before {
   float: left;
@@ -893,8 +893,13 @@ a,
 }
 
 .input-lg {
+  width: 100%;
   height: 55px;
-  padding: 16px 32px;
+}
+
+.input-lg.mensagem {
+  width: 100%;
+  height: 150px;
 }
 
 .has-error .form-control-feedback {
@@ -2452,16 +2457,16 @@ a,
       text-align: right;
   }
 
-  .gmap_canvas {
+.gmap_canvas {
       overflow: hidden;
       background: none !important;
 }
 
 @media (min-width: 768px) {
-  .section-contact-3 {
+.section-contact-3 {
     min-height: 570px;
   }
-  .section-contact-3 .address {
+.section-contact-3 .address {
     margin-top: 100px;
   }
 }
@@ -2534,7 +2539,7 @@ a,
 .section-get-started .text-gold,
 .section-header-freebie .text-gold,
 .section-our-team-freebie .text-gold {
-  color: #c5a47e;
+  color:#127997;
 }
 .section-get-started .parallax,
 .section-get-started .static-image,
@@ -2623,6 +2628,7 @@ a,
 
 .card p {
   min-height: 0;
+  color: #777777;
 }
 
 .section-our-clients-freebie .list-logos img {
@@ -2656,6 +2662,12 @@ a,
 .image-clients img,
 .author img {
   width: 100%;
+}
+
+.image-icons
+{
+  width: 50px;
+  height: 50px;
 }
 
 /* END FREEBIE */
@@ -2921,7 +2933,7 @@ a,
     margin-top: 25px;
   }
   footer .row .info ul {
-    text-align: center;
+    /*text-align: center;*/
   }
   footer .row div:first-child .title {
     margin-top: 0;
