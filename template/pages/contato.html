@@ -18,7 +18,7 @@
     <link href="../../assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
 
     <nav class="navbar navbar-default navbar-dark">
         <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
@@ -32,7 +32,7 @@
                     <span class="icon-bar bar3"></span>
                 </button>
                 <a href="/" class="navbar-brand">
-                    A L C
+                    <img src="/assets//img/templatefront.png" alt="">
                 </a>
             </div>
             <div class="collapse navbar-collapse">
@@ -93,7 +93,7 @@
     <div id="contato" class="section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col">
                             <div class="title-area">
                             <h2>Entre em contato conosco</h2>
                                 <div class="separator separator-danger">✻</div>
@@ -102,6 +102,10 @@
                                         <div class="contact-form">
                                             <div class="contact-form">
                                                 <label class="" for="nome">Nome:</label>
+                                                <input type="text" id="nome" class="input-lg">
+                                            </div>
+                                            <div class="contact-form">
+                                                <label class="" for="nome">Empresa:</label>
                                                 <input type="text" id="nome" class="input-lg">
                                             </div>
                                             <div class="contact-form">
