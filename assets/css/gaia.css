@@ -165,6 +165,22 @@ a:hover {
   color: #777777;
 }
 
+.whatsappbuttonfixed
+{
+  height: 5rem; 
+  width: 5rem; 
+  position:fixed; 
+  bottom: 25px; 
+  right: 25px; 
+  z-index:100;
+  
+}
+.whatsappbuttonfixed img
+{
+  width: 100%;
+  border-radius: 40%;  
+}
+
 .title-modern {
   font-family: 'Dosis', sans-serif;
   font-weight: 200;
@@ -224,7 +240,7 @@ a:hover {
 .separator {
   color: #12799747;
   margin: 0 auto 20px;
-  max-width: 240px;
+  max-width: 540px;
   text-align: center;
   position: relative;
 }
@@ -2003,8 +2019,18 @@ a,
   position: absolute;
   width: 100%;
   display: block;
-  bottom: 0;
+  bottom: 60%;
+  top: 65%;
 }
+
+@media(max-width: 800px){
+.section-header .container,
+.section-header-blog .container,
+.section-presentation-page .container {
+  display: none;
+}
+}
+
 .section-header .content,
 .section-header-blog .content,
 .section-presentation-page .content {
@@ -2055,7 +2081,7 @@ a,
 .section-header-blog .separator,
 .section-presentation-page .separator {
   color: #fff;
-  margin: 30px auto;
+  margin: 100px auto;
 }
 .section-header .separator.line-separator:before, .section-header .separator.line-separator:after,
 .section-header-blog .separator.line-separator:before,
@@ -2182,6 +2208,13 @@ a,
   font-size: 30px;
 }
 
+.carousel .item.active{
+  height: 100vh;
+}
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
 .list-logos img {
   max-width: 120px;
   margin: 0 auto;
@@ -2711,9 +2744,6 @@ a,
   .section-we-made-1 .row [class^="col-"] {
     padding-right: 0;
     padding-left: 0;
-  }
-  .section-we-made-1 .transition-1 {
-    /*     		transition: all 0.5s; */
   }
 
   .section-we-made-2 .scroll-area {
