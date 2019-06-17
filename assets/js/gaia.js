@@ -100,6 +100,18 @@ $(window).on('scroll',function(){
 
 });
 
+    $('a[href*="#"]').on('click', function (e) {
+        e.preventDefault()
+
+        $('html, body').animate(
+            {
+                scrollTop: $($(this).attr('href')).offset().top - 70,
+            },
+            500,
+            'linear'
+        )
+    })
+
 $('a[data-scroll="true"]').click(function(e){
     var scroll_target = $(this).data('id');
     var scroll_trigger = $(this).data('scroll');
