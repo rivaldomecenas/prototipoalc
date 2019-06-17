@@ -3495,6 +3495,10 @@ body {
 }
 /*          Changes for small display      */
 @media (max-width: 767px) {
+  .info-image img {
+    width: 50%;
+    height: auto;}
+
   .navbar-transparent {
     padding-top: 0;
     background-color: rgba(0, 0, 0, 0.45);
